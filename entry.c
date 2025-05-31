@@ -37,15 +37,15 @@ int main(void) {
 		memcpy(&next_shape, node->next->data, node->next->datasize);
 
 		static char *msg = "YOU => %s  |  %s <= PROGRAM,  %s\n";
-		#define PRINT_MSG(shape, result) printf(msg, shape2str(input_shape), shape, result)
+		#define PRINT_MSG(result) printf(msg, shape2str(input_shape), shape2str(curr_shape), result)
 
 		if (input_shape == curr_shape)
-			PRINT_MSG(shape2str(curr_shape), "TIE");
+			PRINT_MSG("TIE");
 		else
 		if (input_shape == next_shape)
-			PRINT_MSG(shape2str(curr_shape), "WIN!");
+			PRINT_MSG("WIN!");
 		else
-			PRINT_MSG(shape2str(curr_shape), "DEFEATED...");
+			PRINT_MSG("DEFEATED...");
 	}
 
 	cdll_destroy(rps_list);
