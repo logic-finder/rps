@@ -1,5 +1,5 @@
-#ifndef CDLL_ADT_H
-#define CDLL_ADT_H
+#ifndef CDLL_H
+#define CDLL_H
 
 #include <stddef.h>
 #include <stdbool.h>
