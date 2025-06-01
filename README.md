@@ -4,7 +4,7 @@ A simple command line "rock paper scissors" game simulator written in C which ut
 ## Build
 ```bash
 make        # builds `rps`, the executable
-make clean  # deletes *.o and the executable
+make clean  # deletes *.o
 ```
 
 ## Explanation
