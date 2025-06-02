@@ -14,7 +14,7 @@ int main(void) {
 	srand(time(NULL));
 	rps_list = make_rps();
 	
-	puts("r for ROCK, p for PAPER, and S for SCISSORS. q to quit.");
+	puts("r for ROCK, p for PAPER, and s for SCISSORS. q to quit.");
 	for (;;) {
 		int rv, input;
 		node_t *node;
