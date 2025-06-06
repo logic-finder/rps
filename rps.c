@@ -11,7 +11,7 @@ extern cdll_t *make_rps(void) {
    list = cdll_create();
 
    for (int i = 0; i < SHAPE_NUM; i++)
-      (void) cdll_push(list, &shape[i], sizeof shape);
+      (void) cdll_push(list, &shape[i], sizeof *shape);  /* shape[0] */
 
    return list;
 }
